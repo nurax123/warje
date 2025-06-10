@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>warje</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Logo Bulat Kiri Atas -->
+  <div class="logo">
+    <img src="img/logo.jpeg" alt="Logo" />
+  </div>
+
+  <!-- Tombol Melayang Kanan Bawah -->
+  <div class="floating-buttons">
+    <button id="menuToggle">&#9776;</button>
+    <button id="musicBtn">▶️</button>
+    <a href="https://www.instagram.com/ofc.twelvetkjone" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+    </a>
+    <a href="https://wa.me/6285781117588" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+  <!-- Navigasi Vertikal (muncul dari tombol hamburger) -->
+  <div class="nav-menu" id="navMenu">
+    <button onclick="togglePage('home')">Beranda</button>
+    <button onclick="togglePage('gallery')">Galeri</button>
+  </div>
+
+  <!-- Konten Beranda -->
+  <div id="home" class="page" style="display:none;">
+    <div class="center-content">
+      <h1>Wilujeung Sumping Barudak</h1>
+      <p>:
+
+🧠 Selamat Datang di Website Urang!
+"Eh, tong loba cingogo atuh, asup weh! Ieu mah website keur nu boga nyali, lain keur nu baperan. Mun maneh gampang pundung, ah mending tutup deui éta browser, balik ka mamah!"
+
+Di dieu mah teu aya basa-basi, teu make 'dear customer' segala. Urang ngomong lempeng, ceplas-ceplos, sakumaha omongan di warung kopi. Jadi, mun hayang nu lemes-lemes mah, ke heula atuh buka situs TPA, da di dieu mah sakola para bangsat sakti!"
+
+Hayu, cekelan kopi, tarik roko (mun boga), trus luncat kana unggal halaman. Di dieu aya rupa-rupa kontén, ti nu nyeleneh nepi ka nu bisa nyandung pikiran. Mun kuat, tong loba nanya. Mun embung, sugan bisa nuturkeun deui engké mun geus apal jalan."
+
+Website ieu didamel keur nu rada-rada eror, nu mikir beda, nu teu betah jadi budak nurut bae. Jadi lamun maneh tukang ngadenge nasihat tapi teu pernah ngajalankeun, ah cocok pisan mampir ka dieu. Siga anjeun, urang ogé loba gaya tapi hasilna minimalis. Tapi atuh atuh, minimal urang jujur!"
+
+Naha rek dagang? Naha rek nyari inspirasi? Naha rek nyetir hate batur? Sadayana bisa. Tapi inget, urang teu tanggung jawab mun maneh kadieunakeun jadi beda—jadi leuwih bodo, leuwih semangat, atawa malah jadi influencer dadakan."
+
+Pokona mah wilujeng sumping di kampung digital urang. Baca, tingali, hayu pake mikir. Mun teu nyambung, ulah disalahkeun sistem. Salahkeun otak sorangan!"
+
+</p>
+    </div>
+  </div>
+
+  <!-- Konten Galeri -->
+  <div id="gallery" class="page" style="display:none;">
+    <div class="center-content">
+      <h1>Galeri</h1>
+      <p>Foto Urang Sadaya:</p>
+      <div class="gallery-vertical">
+        <img src="img/1.jpeg" alt="Foto 1" />
+        <img src="img/2.jpeg" alt="Foto 2" />
+        <img src="img/3.jpeg" alt="Foto 3" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <audio id="backgroundMusic" loop>
+    <source src="audio/DJ KUNGFU MASTER BREAKBEAT YANG KALIAN CARI VIRAL TIKTOK MENGKANE ‼️.mp3" type="audio/mpeg" />
+    Browser Anda tidak mendukung pemutar audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
